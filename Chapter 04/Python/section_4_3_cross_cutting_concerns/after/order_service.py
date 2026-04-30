@@ -10,5 +10,5 @@ class OrderService:
 
     def save_order(self, order):
         # 3. Use the abstraction (follows DIP)
-        self.logger.log("Saving order...")
+        self.logger.log("Saving order...") # This uses the injected logger
         print("(AFTER_SERVICE) Order saved.")

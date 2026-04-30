@@ -7,7 +7,6 @@ package com.grokkingsoftwarearchitecture.chapter04.section_4_4_anti_patterns.bef
  */
 public class SmtpEmailService {
     public void send(String email, String message) {
-        System.out.println("  [Email] SMTP Logic: Sending '" 
-            + message + "' to " + email);
+        System.out.println("  [Email] SMTP Logic: Sending '" + message + "' to " + email);
     }
 }

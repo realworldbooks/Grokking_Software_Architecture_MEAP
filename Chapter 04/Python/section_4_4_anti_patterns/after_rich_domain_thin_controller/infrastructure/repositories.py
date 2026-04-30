@@ -1,6 +1,7 @@
 from ..domain.interfaces.data_access_interfaces import IOrderRepository, ICustomerRepository, IItemRepository
 from ..domain.models.customer import Customer
 from ..domain.models.item import Item
+
 class SqlOrderRepository(IOrderRepository):
     """
     ARCHITECTURE NOTE: By isolating SQL logic here, we prevent 
@@ -19,9 +20,9 @@ class SqlOrderRepository(IOrderRepository):
 class SqlCustomerRepository(ICustomerRepository):
     """Concrete implementation for a SQL database (Simulated)"""
     def get_by_id(self, customer_id: int) -> Customer:
-       print(f"(INFRA) SQL: Fetching Customer {customer_id}")
+        print(f"(INFRA) SQL: Fetching Customer {customer_id}")
         # Returning a dummy Gold customer to test the Rich Domain logic
-       return Customer(id=customer_id, type="Gold", email="gold@example.com")
+        return Customer(id=customer_id, type="Gold", email="gold@example.com")
     
 class SqlItemRepository(IItemRepository):
     """

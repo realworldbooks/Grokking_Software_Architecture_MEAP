@@ -27,14 +27,15 @@ class Demo:
         server = uvicorn.Server(config)
 
         # Run it in a background thread so the terminal doesn't freeze
-        thread = threading.Thread(target=server.run)
+        thread = threading.Thread(target=server.run, daemon=True) # Set as daemon to allow main program to exit
         thread.start()
 
         print("\n[SUCCESS] FAT CONTROLLER / ANEMIC DOMAIN APP RUNNING (PYTHON/FASTAPI)")
         print("Swagger UI available at: http://localhost:8000/")
         
         # Wait for the user to test the API in their browser
-        input("\nPress ENTER to stop the server and return to the main menu...\n")
+        print("\nPress ENTER to stop the server and return to the main menu...\n")
+        input()
         
         # Gracefully shut down the background server
         print("Shutting down the FastAPI server...")

@@ -1,8 +1,11 @@
 package com.grokkingsoftwarearchitecture.chapter04.section_4_2_downward_dependency.after;
 
+
 /**
- * DATA ACCESS LAYER.
- * Implements the interface.
+ * Insfrastructure Layer
+ * * ARCHITECTURE NOTE:
+ * This concrete implementation sits in the Infrastructure layer 
+ * and implements the interface defined by the domain.
  */
 public class SqlOrderRepository implements OrderRepository {
     @Override

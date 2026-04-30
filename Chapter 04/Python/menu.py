@@ -19,13 +19,12 @@ async def main():
         examples = json.load(f)
 
     while True:
-        clear_screen()
+        # clear_screen() # Keep clear_screen for better user experience
         print("=== Grokking Software Architecture Chapter 04: Python Examples ===\n")
 
         # Sort keys numerically for a clean menu
         keys = sorted(examples.keys(), key=lambda x: int(x))
-
-        for key in keys:
+        for key in keys: # This loop prints the menu options
             print(f"{key}. {examples[key]['name']}")
 
         print("\nType 'exit' to quit.")
@@ -36,7 +35,7 @@ async def main():
 
         if choice in examples:
             selected = examples[choice]
-            clear_screen()
+            # clear_screen() # Keep clear_screen for better user experience
             print(f"--- Running {selected['name']} ---\n")
 
             try:

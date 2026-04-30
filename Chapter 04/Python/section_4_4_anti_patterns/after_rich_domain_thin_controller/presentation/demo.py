@@ -85,7 +85,7 @@ class Demo:
         server = uvicorn.Server(config)
 
         # Run it in a background thread so the terminal doesn't freeze
-        thread = threading.Thread(target=server.run)
+        thread = threading.Thread(target=server.run, daemon=True) # Set as daemon to allow main program to exit
         thread.start()
 
         print("\n[SUCCESS] RICH DOMAIN / THIN CONTROLLER TRADITIONAL 4-LAYER ARCHITECTURE APP RUNNING (PYTHON/FASTAPI)")

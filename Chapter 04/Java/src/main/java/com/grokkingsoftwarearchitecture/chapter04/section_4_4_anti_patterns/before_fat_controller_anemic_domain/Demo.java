@@ -19,14 +19,16 @@ public class Demo {
         System.out.println("Starting the Spring Boot Web API...");
 
         // 1. Start the server and capture the running context
-        ConfigurableApplicationContext context = SpringApplication.run(Demo.class, new String[]{});
+        ConfigurableApplicationContext context = SpringApplication.run(Demo.class);
 
         System.out.println("\n[SUCCESS] FAT CONTROLLER APP RUNNING (JAVA/SPRING)");
         System.out.println("Swagger UI available at: http://localhost:8080");
         System.out.println("\nPress ENTER to stop the server and return to the main menu...");
 
         // 2. Pause the menu while you test the endpoints in your browser
-        new Scanner(System.in).nextLine();
+        @SuppressWarnings("resource")
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
         // 3. Cleanly shut down the server to prevent zombie processes
         System.out.println("Shutting down the Spring Boot server...");
         context.close();

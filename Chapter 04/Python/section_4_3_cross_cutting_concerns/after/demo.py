@@ -18,8 +18,8 @@ class Demo:
 
         # 2. Inject it into the high-level service
         after_service = OrderService(logger)
-
+        
         # 3. Execute the business logic
         after_service.save_order(Order())
-
+        
         print("--------------------------------------------")

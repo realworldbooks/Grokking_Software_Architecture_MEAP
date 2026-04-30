@@ -17,8 +17,8 @@ public class SqlItemRepository implements ItemRepository {
    public Item getById(int itemId) {
         System.out.println("(INFRA) SQL: Fetching official price for Item " + itemId);
         Item item = new Item();
-        item.id = itemId;
-        item.price = (itemId == 1) ? 100.0 : 50.0;
+        item.setId(itemId);
+        item.setPrice((itemId == 1) ? 100.0 : 50.0);
         return item;
     }
 }

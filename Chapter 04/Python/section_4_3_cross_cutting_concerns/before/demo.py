@@ -11,10 +11,10 @@ class Demo:
         pair the High-Level Service with the Low-Level SQL 
         implementation.
         """
-    print("--- Running 'Before' (Static Logger) ---")
-    
-    # The service is instantiated without any visible logger.
-    before_service = OrderService()
-    before_service.save_order(Order())
-    
-    print("-----------------------------------------")
+        print("--- Running 'Before' (Static Logger) ---")
+        
+        # The service is instantiated without any visible logger.
+        before_service = OrderService()
+        before_service.save_order(Order())
+        
+        print("-----------------------------------------")
