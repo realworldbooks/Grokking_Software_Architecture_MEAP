@@ -27,7 +27,7 @@ This is our primary "Before and After" study.
 ## How to Run the Examples
 
 1. .NET (C#)
-- Prerequisites: .NET 6.0 SDK+.
+- Prerequisites: .NET 10.0 SDK+.
 - Navigate to the Chapter03/C#/ directory.
 - Run the project:
 ```Bash

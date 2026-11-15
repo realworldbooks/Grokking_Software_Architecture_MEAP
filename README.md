@@ -60,7 +60,7 @@ Because each chapter introduces different concepts (from simple console apps to 
 ### **General Prerequisites**
 To run the code in this repository, you will need the standard runtime environments for the languages you choose to explore:
 
-- **.NET:** .NET 6.0 SDK or higher
+- **.NET:** .NET 10.0 SDK or higher
 
 - **Java:** Java 17+ and Maven
 

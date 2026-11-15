@@ -27,7 +27,7 @@ These examples demonstrate how to create a "Plug-and-Play" architecture where bu
 
 ## How to Run the Examples
 1. .NET (C#)
-    - Prerequisites: .NET 6.0 SDK or higher.
+    - Prerequisites: .NET 10.0 SDK or higher.
     - Navigate to the Chapter05/C#/ directory.
     - Run the interactive console menu:
 

@@ -27,7 +27,7 @@ These examples demonstrate the **Architecture Governance** concept: instead of r
 ## How to Run the Examples
 
 ### 1. .NET (C#)
-- **Prerequisites:** .NET 8.0 SDK or higher.
+- **Prerequisites:** .NET 10.0 SDK or higher.
 - **Tools Used:**
   - **NetArchTest.Rules:** The architecture testing library for .NET that parses compiled assemblies into an internal dependency graph.
   - **Microsoft.EntityFrameworkCore:** Used by the sample Order Service infrastructure layer.

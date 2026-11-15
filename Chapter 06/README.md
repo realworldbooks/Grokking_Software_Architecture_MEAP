@@ -23,7 +23,7 @@ These examples demonstrate the journey from traditional REST endpoints to precis
 
 ## How to Run the Examples
 1. **.NET (C#)**
-  - Prerequisites: .NET 6.0 SDK or higher.
+  - Prerequisites: .NET 10.0 SDK or higher.
   - Navigate to the Chapter06/C#/ directory.
   - Run the interactive console menu:
 

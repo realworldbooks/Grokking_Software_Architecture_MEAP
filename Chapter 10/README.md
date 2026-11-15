@@ -19,7 +19,7 @@ Chapter 10 focuses on the "Cloud Reality"—a fundamentally hostile, distributed
 ## How to Run the Examples
 
 ### 1. .NET (C#)
-- **Prerequisites:** .NET 8.0 SDK or higher.
+- **Prerequisites:** .NET 10.0 SDK or higher.
 - **Tools Used:** - **Polly:** The absolute gold standard in .NET for resilience and transient-fault-handling (Retry, Circuit Breaker, Timeout).
   - **LiteDB:** A lightweight, serverless NoSQL document store used to simulate a local "Fallback Queue" when the external API goes down.
 - Navigate to the `Chapter10/C#/` directory.

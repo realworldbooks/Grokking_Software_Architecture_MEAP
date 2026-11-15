@@ -25,7 +25,7 @@ Chapter 11 focuses on removing the human and the hardcoded string from the equat
 ## How to Run the Examples
 
 ### 1. .NET (C#)
-- **Prerequisites:** .NET 8.0 SDK or higher.
+- **Prerequisites:** .NET 10.0 SDK or higher.
 - **Tools Used:**
   - **AWSSDK.SecretsManager:** The official AWS SDK for .NET, used to interact with AWS Secrets Manager.
   - **System.Text.Json:** The built-in .NET JSON framework used for parsing secret payloads.
