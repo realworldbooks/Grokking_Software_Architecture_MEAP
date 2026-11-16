@@ -34,7 +34,7 @@ This is our primary "Before and After" study.
 dotnet run
 ```
 2. Java
-- Prerequisites: Java 17 and Maven.
+- Prerequisites: Java 21 (or newer) and Maven.
 - Navigate to the Chapter03/Java/ directory.
 - Compile and execute:
 ```Bash

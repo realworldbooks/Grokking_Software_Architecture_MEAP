@@ -36,7 +36,7 @@ Chapter 11 focuses on removing the human and the hardcoded string from the equat
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **Tools Used:**
   - **AWS SDK for Java v2 (secretsmanager):** The official AWS SDK for Java, used to retrieve secrets at runtime via IAM role.
   - **Jackson Databind:** A fast JSON parser for Java used for parsing the secret payload response.

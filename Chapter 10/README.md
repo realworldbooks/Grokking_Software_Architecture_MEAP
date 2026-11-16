@@ -29,7 +29,7 @@ Chapter 10 focuses on the "Cloud Reality"—a fundamentally hostile, distributed
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **Tools Used:**
   - **Resilience4j:** A lightweight, modern fault tolerance library designed for Java functional programming (replaces the older Netflix Hystrix).
   - **H2:** An in-memory database used to temporarily persist requests that fail during an Open Circuit state.

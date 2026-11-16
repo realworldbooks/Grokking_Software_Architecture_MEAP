@@ -38,7 +38,7 @@ These examples demonstrate the **Architecture Governance** concept: instead of r
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **Tools Used:**
   - **ArchUnit:** The industry-standard architecture testing library for Java.
   - **Gson:** A JSON library used for parsing the Examples.json configuration.

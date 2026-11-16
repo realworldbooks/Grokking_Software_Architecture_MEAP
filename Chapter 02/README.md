@@ -21,7 +21,7 @@ dotnet run
 The menu uses Reflection to dynamically execute the chosen class.
 
 2. Java
-- Prerequisites: Java 17 and Maven.
+- Prerequisites: Java 21 (or newer) and Maven.
 - Navigate to Chapter02/Java/
 - Run: 
 ```bash

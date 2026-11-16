@@ -32,7 +32,7 @@ dotnet run
 ```
 
 2. **Java**
-  - Prerequisites: Java 17 and Maven.
+  - Prerequisites: Java 21 (or newer) and Maven.
   - Navigate to the Chapter06/Java/ directory.
   - Compile and execute the interactive menu:
 ```bash

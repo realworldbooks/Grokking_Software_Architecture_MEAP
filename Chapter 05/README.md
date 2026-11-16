@@ -36,7 +36,8 @@ dotnet run
 ```
 
 2. Java
-    - Prerequisites: Java 17 and Maven.
+    - Prerequisites: Java 21 (or newer) and Maven.
+    - Java 21 note: `java.net.http.HttpClient` implements `AutoCloseable` from Java 21 onward, so the `before` example can close its client with try-with-resources. The `after` adapter instead reuses a single client held in a `static final` field, which is the recommended pattern for a long-lived adapter.
     - Navigate to the Chapter05/Java/ directory.
     - Compile and execute the interactive menu:
 

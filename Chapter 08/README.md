@@ -29,7 +29,7 @@ These examples demonstrate that databases are not just passive buckets for data.
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **ORM Used:** Hibernate / JPA (SQLite).
 - Navigate to the `Chapter08/Java/` directory.
 - Compile and execute the interactive master menu:

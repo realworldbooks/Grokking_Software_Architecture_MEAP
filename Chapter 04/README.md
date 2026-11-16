@@ -31,7 +31,7 @@ These examples demonstrate how to structure a layered application, manage depend
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - Navigate to the Chapter04/Java/ directory.
 - Compile and execute the interactive menu:
   ```Bash

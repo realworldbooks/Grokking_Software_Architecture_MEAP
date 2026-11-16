@@ -31,7 +31,7 @@ The cloud isn't magic; it's just someone else's computer. In this chapter, we br
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **Tools Used:** - 
    - **RxJava3:** Implements the Reactive push-model to simulate cloud event triggers safely in local memory.
    - **AWS Lambda Java Core & Events:** Provides the official AWS interfaces to demonstrate exactly how production Java Serverless functions are structured

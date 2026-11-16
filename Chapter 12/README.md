@@ -34,7 +34,7 @@ These examples demonstrate the **Network Tax** in action: the Latency Tax, the R
   ```
 
 ### 2. Java
-- **Prerequisites:** Java 17 and Maven.
+- **Prerequisites:** Java 21 (or newer) and Maven.
 - **Tools Used:**
   - **Gson:** A JSON library used for parsing the Examples.json configuration.
 - Navigate to the `Chapter12/Java/` directory.
