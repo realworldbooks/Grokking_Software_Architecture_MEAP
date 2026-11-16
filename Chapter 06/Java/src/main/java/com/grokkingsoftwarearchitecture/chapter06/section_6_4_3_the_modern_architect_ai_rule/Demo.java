@@ -2,6 +2,7 @@ package com.grokkingsoftwarearchitecture.chapter06.section_6_4_3_the_modern_arch
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * The Execution Layer.
@@ -12,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Demo {
 
-    public static void run() {
+    public static ConfigurableApplicationContext run() {
         System.out.println("\n--- STARTING THE MODERN AI ARCHITECT DEMO ---");
         System.out.println("Goal: Turn our Java codebase into a perfect LLM Prompt.");
         
@@ -24,6 +25,6 @@ public class Demo {
         
         // This single line builds the container, registers all DI components, 
         // configures OpenAPI, and starts the web server.
-        SpringApplication.run(Demo.class);
+        return SpringApplication.run(Demo.class);
     }
 }

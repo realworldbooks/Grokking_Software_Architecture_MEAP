@@ -42,14 +42,27 @@ mvn clean compile exec:java
 3. **Node.js (JavaScript)**
   - Prerequisites: Node.js (v18+).
   - Navigate to the Chapter06/JS/ directory.
-  - Run the interactive menu:
+  - Install the dependencies and run the interactive menu:
 ```bash
-node menu.js
+npm install
+npm start
 ```
 
 4. **Python**
   - Prerequisites: Python 3.10+.
   - Navigate to the Chapter06/Python/ directory.
+  - Create a virtual environment and install the dependencies (required for option #3, the AI-Ready API):
+```bash
+python -m venv venv
+
+# Activate the virtual environment (Windows):
+venv\Scripts\activate
+# Activate the virtual environment (macOS/Linux):
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+
   - Run the interactive menu:
 ```bash
 python menu.py

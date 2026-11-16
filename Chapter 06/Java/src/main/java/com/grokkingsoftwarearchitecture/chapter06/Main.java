@@ -3,7 +3,7 @@ package com.grokkingsoftwarearchitecture.chapter06;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.Map;
@@ -64,8 +64,19 @@ public class Main {
             boolean isSpringBoot = config.isSpringBoot();
 
             if (isSpringBoot) {
-                // Spring Boot handles its own logging/startup
-                SpringApplication.run(clazz, args);
+                // Spring Boot handles its own logging/startup. The demo's run()
+                // method starts the embedded server and returns the running
+                // application context so we can stop it gracefully.
+                Method runMethod = clazz.getMethod("run");
+                Object result = runMethod.invoke(null);
+
+                System.out.println("\nPress ENTER to stop the server and return to the main menu...");
+                new Scanner(System.in).nextLine();
+
+                if (result instanceof ConfigurableApplicationContext context) {
+                    context.close();
+                    System.out.println("Server shut down successfully.");
+                }
             } else {
                 // Standard Java execution for REST/GraphQL demos
                 Method runMethod = clazz.getMethod("run");
